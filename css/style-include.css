@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+#header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.content div {
+    flex-basis: 30%; /* Assigns equal width to each flex item */
+    padding: 20px;
+    background-color: #eef;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.highlight {
+    color: #007bff;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+li:last-child {
+    border-bottom: none;
+}
+
+/* Media query untuk lebar device < 768  */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .content div {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+}
