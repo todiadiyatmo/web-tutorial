@@ -11,6 +11,10 @@
         p {
             color: green;
         }
+        /* Gaya baru untuk inheritance */
+        div {
+            color: purple;  /* Gaya default untuk semua teks dalam div */
+        }
     </style>
 </head>
 <body>
@@ -18,5 +22,14 @@
     <p id="paragraph">Berwarna merah</p>
     <p class="text">Berwarna biru</p>
     <p id="paragraph" class="text">Berwarna merah</p>
+    <!-- Contoh inheritance -->
+    <div>
+        <span>Ini akan berwarna ungu</span>
+    </div>
+    <!-- Contoh lain dengan override -->
+    <div style="color: black;">
+        <p>Ini akan berwarna hitam karena override oleh inline style</p>
+        <span>Ini juga akan berwarna hitam</span>
+    </div>
 </body>
 </html>
